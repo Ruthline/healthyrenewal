@@ -10,7 +10,7 @@ function Header() {
                     
                     <div className="nav-group">
                         
-                        <Link to="/hr-home" className="one-nav"><img src={Logo} alt=""></img></Link>
+                        <Link to="/home" className="one-nav"><img src={Logo} alt=""></img></Link>
     
                         
                         
@@ -29,7 +29,7 @@ function Header() {
                         
                             <Link to="/"  className="five-nav item">¿Qué es una ficha antropométrica?</Link>
                             <Link to="/" className="six-nav item">Información planes</Link>
-                            <Link to="/hr-home" className="four-nav item" >Healthy Renewal</Link>
+                            <Link to="/home" className="four-nav item" >Healthy Renewal</Link>
                         
                             <div className='seven-nav item search-home search-hidden'>
                                     <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
@@ -63,7 +63,7 @@ function Header() {
                         
                             <Link to="/"  className=" item">¿Qué es una ficha antropométrica?</Link>
                             <Link to="/" className=" item">Información planes</Link>
-                            <Link to="/hr-home" className=" item" >Healthy Renewal</Link>
+                            <Link to="/home" className=" item" >Healthy Renewal</Link>
                         
                             <div className='item search-home search-hidden'>
                                     <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
