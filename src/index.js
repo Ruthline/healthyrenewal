@@ -12,8 +12,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <Routes>
-    <Route path='/hr-home/' element={<Home/>}></Route>
-    <Route path='/healthyrenewal' element={<Navigate replace to={"/hr-home/"}/>}></Route>
+    <Route path='/healthyrenewal' element={<Home/>}></Route>
+    <Route path='/hr-home' element={<Navigate replace to={"/healtthyrenewal"}/>}></Route>
     <Route path='/aboutUs' element={<AboutUs/>}></Route>
     <Route path='/signIn' element={<SingIn/>}></Route>
     <Route path='/singUp' element={<SignUp/>}></Route>
