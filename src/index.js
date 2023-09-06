@@ -13,7 +13,7 @@ root.render(
   <BrowserRouter>
   <Routes>
     <Route path='/hr-home/' element={<Home/>}></Route>
-    <Route path='/home' element={<Navigate replace to={"/steam-home/"}/>}></Route>
+    <Route path='/healthyrenewal' element={<Navigate replace to={"/hr-home/"}/>}></Route>
     <Route path='/aboutUs' element={<AboutUs/>}></Route>
     <Route path='/signIn' element={<SingIn/>}></Route>
     <Route path='/singUp' element={<SignUp/>}></Route>
