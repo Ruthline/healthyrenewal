@@ -8,8 +8,8 @@ html{
     height: 100%;
 }
 body{
-    font-family: 'Helvetica', sans-serif;
     max-height: 100%;
+    font-family: 'Antic Slab', serif;
 }
 :root{
     --dark-blue:#022B3A;
@@ -18,15 +18,7 @@ body{
     --grey:#E1E5F2;
     --white:#FFFFFF;
 }
-h1{
-    color: var(--dark-green);
-}
-.container-index{
-    width:100% ;
-    display: grid;
-    grid-template-areas: 
-    "headerindex";
-}
+
 .header-index{
     padding: 0.2rem 1rem;
     z-index: 0;
@@ -63,17 +55,9 @@ h1{
 }
 .item{
     padding: 0.5rem;
-    
     text-decoration: none;
 }
-.item:hover{
-    color: rgba(241, 18, 241, 0.5);
-}
 
-.sin-login{
-    display: none;
-    padding: 0;
-}
 .nav-group{
     margin:0.8rem 0  0.8rem;
     display: grid;
@@ -81,43 +65,47 @@ h1{
     grid-area: headerindex;
     text-align: center;
     grid-template-areas:
-    "one-nav two-nav three-nav"
+    "one-nav one-nav three-nav"
     "items items items";
 }
-.search-o{
+.search-home{
     display: flex;
 }
 
-.search-o input{
+.search-home input{
     width: 100%;
     padding: 0.5rem 1.3rem;
     border-radius: 20px 0px 0px 20px;
-    border: none;
+    border: none ;
+    outline: none;
 }
-.search-o input[placeholder]{
+.search-home input:focus{
+    box-shadow: 0 0 5px rgba(80, 74, 74, 0.3);
+}
+.search-home input[placeholder]{
     font-weight: 600;
+    font-family: 'Antic Slab', serif;
+    letter-spacing: 0.2px;
 }
-.search-o button{
+.search-home button{
     padding: 0.1rem 1rem;
     cursor: pointer;
     border-radius: 0px 20px 20px 0px;
     border: none;
     border-left: 1px solid rgba(69, 45, 128, 0.11) ;
     color:var(--dark-blue);
+    font-weight: bold;
+    font-family: 'Suez One', serif;
 }
-.s-s{
+.search-hidden{
+    background-color: pink;
     display: none;
 }
 .one-nav, .one-nav img{
     grid-area: one-nav;
     width: 300px;
 }
-.two-nav{
-   
-    color: var(--purple-color);
-    grid-area: two-nav;
-    font-size: 30px;
-}
+
 .three-nav{
     display: flex;
     justify-self: flex-end;
@@ -129,11 +117,9 @@ h1{
 .three-nav:hover{
     color: var(--blue);
 }
-
 .four-nav{
     grid-area: four-nav;
 }
-
 .five-nav{
     grid-area:five-nav;
 }
@@ -141,13 +127,8 @@ h1{
 .six-nav{
     grid-area: i5;
 }
-
 .seven-nav{
-    grid-area:six-nav;
-}
-
-.eight-nav{
-    grid-area: eight-nav;
+    grid-area: seven-nav;
     padding: 5px;
     border-style: none;
 }
@@ -155,8 +136,7 @@ h1{
 .four-nav,
 .five-nav,
 .six-nav,
-.seven-nav,
-.eight-nav{
+.seven-nav{
     background-color: var(--grey);
     color:var(--dark-blue);
     border-bottom: 2px solid white;
@@ -168,8 +148,7 @@ h1{
 .four-nav:hover,
 .five-nav:hover,
 .six-nav:hover,
-.seven-nav:hover,
-.eight-nav:hover{
+.seven-nav:hover{
     color: var(--blue);
     border-bottom: 2px solid var(--blue);
 }
@@ -196,45 +175,40 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.buttons-mobile a{
-    text-decoration: none;
+
+.In a, .In{
+    text-align: center;
+    background-color: var(--white);
+    letter-spacing: 0.5px;
     font-size: 14px;
     text-decoration: none;
-}
-
-.In {
-    background-color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-    
-}
-.In a{
     color: var(--dark-blue);
-    text-shadow: 2px 2px 5px #E1E5F2;
+    text-shadow: 2px 2px 5px #b8bdc2;
 }
 .In a:hover, .In:hover{
     background-color: var(--dark-blue);
-    text-shadow: 2px 2px 5px #6a6b6b;
+    text-shadow: 2px 2px 5px #022B3A;
     color: var(--white);
-    
+}
+.Up a, .Up{
+    background-color: var(--dark-blue);
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    width: 100%;
+    text-decoration: none;
+    color: var(--white);
+    text-shadow: 2px 2px 5px #022B3A;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
-.Up{
-    background-color: var(--dark-blue);
-    text-decoration: none;
-    font-weight: bold;
-}
-.Up a{
-    padding: 0.5rem 2.7rem;
-    color: var(--white);
-    text-shadow: 2px 2px 5px #6a6b6b;
-}
 .Up a:hover, .Up:hover{
     background-color: var(--white);
     color: var(--dark-blue);
-    text-shadow: 2px 2px 5px #E1E5F2;
+    text-shadow: 2px 2px 5px #b8bdc2;
 }
 .sign{
+    font-family: 'Suez One', serif;
     padding: 0.5rem;
     width: 45%;
     border-radius: 8px;
@@ -243,52 +217,14 @@ h1{
 }
 
 
-.dropbtn {
-    color: var(--purple-color);
-    font-size: 45px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown {
-    width: 80px;
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-     
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--purple-color);
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-   
-    padding: 12px 16px;
-    letter-spacing: 1.5px;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-   
-    border-bottom: 2px solid var(--amarillo);
-}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-   
-  }
   
   
 @media screen and (min-width:768px){
-    .contenedor-index{
-       background-color: #1F7A8C;
+    .container-index{
+        width:100% ;
+        display: grid;
+        grid-template-areas: 
+        "headerindex";
     }
     .header-index{
         justify-content: space-around;
@@ -320,14 +256,7 @@ h1{
     .nav-group label{
         display: none;
     }
-    .sin-login{
-        color: white;
-        padding: 5px;
-        display: unset;
-    }
-    .sin-login2{
-        display: none;
-    }
+    
 
     .nav-group{
         display: grid;
@@ -338,12 +267,11 @@ h1{
         "one-nav items";
       
     }
-    .two-nav,
+    
     .four-nav,
     .five-nav,
     .six-nav,
-    .seven-nav,
-    .eight-nav{
+    .seven-nav{
         background-color: var(--purple-color);
         border-bottom: 2px solid white;
         color: white;
@@ -352,48 +280,26 @@ h1{
         font-weight: bold;
         margin-bottom: 3px;
     }
-    .four-nav{
-        border-radius: 45px 0 0 45px;
-    }
-    .dropbtn{
-        position: relative;
-        top: 7.5px;
-        padding: 7px 1rem;
-        font-size: 18px;
-    }
-    .dropdown {
-        width: 50px;
-    }
-    .dropdown:hover .dropdown-content {
-        margin-top: 0.8rem;
-    }
-    .search-o{
+    .search-home{
         padding: 2px;
         display: none;
     }
-    .search-o input{
+    .search-home input{
         margin-top: 5px;
         width: 60%;
         padding: 0.13rem 1rem;
     }
-    .search-o button{
+    .search-home button{
         padding: 0.1rem 0.5rem;
         height: 19px;
     }
-    .s-s{
+    .search-hidden{
         display: unset;
     }
-
+    
 }
 
 @media screen and (min-width:1024px){
-        .two-nav,
-        .four-nav,
-        .five-nav,
-        .six-nav,
-        .seven-nav,
-        .eight-nav{
-            width: 150px;
-        }
-        
+      
+       
     }

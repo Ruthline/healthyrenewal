@@ -10,7 +10,7 @@ function Header() {
                     
                     <div className="nav-group">
                         
-                        <Link to="/home" className="one-nav"><img src={Logo} alt=""></img></Link>
+                        <Link to="/hr-home" className="one-nav"><img src={Logo} alt=""></img></Link>
     
                         
                         
@@ -20,7 +20,8 @@ function Header() {
     
                         
                         <div className="items" >
-                            <div className='eight-nav item search-o'>
+                            
+                            <div className='seven-nav item search-home'>
                                 <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
                                 <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
                             </div>
@@ -28,46 +29,43 @@ function Header() {
                         
                             <Link to="/"  className="five-nav item">¿Qué es una ficha antropométrica?</Link>
                             <Link to="/" className="six-nav item">Información planes</Link>
-                            <Link to="/home" className="four-nav item" >Healthy Renewal</Link>
+                            <Link to="/hr-home" className="four-nav item" >Healthy Renewal</Link>
                         
-                            <div className='eight-nav item search-o s-s'>
+                            <div className='seven-nav item search-home search-hidden'>
                                     <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
                                     <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
                             </div>
     
-                       
-                        
-                        
                         </div>
                     </div>
 
                     <div className='buttons-tablet'>
                         <div className='styleButtonTablet'>
-                        <button className='sign In'><Link to="/home">Iniciar Sesión</Link></button>
-                        <button className='sign Up'><Link to="/home">Registrarse</Link></button>
+                            <Link to="/home" className='sign In'>Iniciar Sesión</Link>
+                            <Link to="/home" className='sign Up'>Registrarse</Link>
                         </div>
                         
                     </div>
                 </div>
 
                 <div className='buttons-mobile'>
-                    <button className='sign In'><Link to="/home">Iniciar Sesión</Link></button>
-                    <button className='sign Up'><Link to="/home">Registrarse</Link></button>
+                   <Link to="/home" className='sign In'>Iniciar Sesión</Link>
+                    <Link to="/home" className='sign Up'>Registrarse</Link>
                 </div>
 
 
                 <div className="items-tablet" >
-                            <div className='eight-nav item search-o'>
+                            <div className=' item search-home'>
                                 <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
                                 <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
                             </div>
                         
                         
-                            <Link to="/"  className="five-nav item">¿Qué es una ficha antropométrica?</Link>
-                            <Link to="/" className="six-nav item">Información planes</Link>
-                            <Link to="/home" className="four-nav item" >Healthy Renewal</Link>
+                            <Link to="/"  className=" item">¿Qué es una ficha antropométrica?</Link>
+                            <Link to="/" className=" item">Información planes</Link>
+                            <Link to="/hr-home" className=" item" >Healthy Renewal</Link>
                         
-                            <div className='eight-nav item search-o s-s'>
+                            <div className='item search-home search-hidden'>
                                     <input  type='text' placeholder='__' name='buscar' id='buscar'></input>
                                     <button for='buscar'><FontAwesomeIcon icon={faMagnifyingGlass}/></button>
                             </div>
